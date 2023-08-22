@@ -1,0 +1,15 @@
+import { Component, Input } from '@angular/core';
+import { Categoria } from '../../interfaces/categoria';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-tarjeta-categoria',
+  templateUrl: './tarjeta-categoria.component.html',
+  styleUrls: ['./tarjeta-categoria.component.scss'],
+  standalone:true,
+  imports: [CommonModule]
+})
+export class TarjetaCategoriaComponent {
+
+  @Input({required:true}) categoria!: Categoria;
+}
